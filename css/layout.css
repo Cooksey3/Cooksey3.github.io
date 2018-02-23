@@ -21,6 +21,16 @@
 	grid-gap: var(--grid-gap);
 }
 
+.bio {
+	display: flex;
+	flex-direction: column;
+	background-color: red;
+}
+
+.skills {
+	display: flex;
+}
+
 .main__content{
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);	
@@ -34,16 +44,26 @@
 	grid-gap: var(--grid-gap);	
 }
 
-.main__left__sidebar{
+.main_left_sidebar{
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);	
 	grid-gap: var(--grid-gap);		
 }
 
-.left_item1 {
+
+.linkedin {
+	margin-bottom: 7px;
+}
+
+.about-me {
+	font-size: 30px;
+}
+
+.biography {
+	margin-top: 5px;
+}
+
+.linkedin {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: flex-end;
-	background-color: red;
+	margin-top: auto;
 }

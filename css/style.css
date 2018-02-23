@@ -24,10 +24,26 @@
     border-width: 5px;
     font-size: 50px;
 }
+
+.bio {
+	border-width: 5px;
+	border-bottom: solid;
+}
+
+.skill {
+	display: grid;
+	grid-template-rows: 10% auto;
+	list-style-type: none;
+}
+
+.skill ul li {
+	
+}
+
 .main__content__item--1,
 .main__content__item--2 {
     background-color: peru;
-    color: #011;
+    color: orangered;
     border-radius: 7px;
 }
 .main__sidebar__item--1,
