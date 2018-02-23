@@ -1,0 +1,15 @@
+:root {
+    --grid-gap: 20px;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px auto 150px;
+	grid-gap: var(--grid-gap);
+	margin: var(--grid-gap);
+	background-color: pink;
+
+}
