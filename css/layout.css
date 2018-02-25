@@ -3,32 +3,78 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --grid-gap: 20px;
 }
 
 .container{
-	height: calc(100vh - (var(--grid-gap) * 2));
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 100px auto 150px;
+	grid-template-columns: 2fr 3fr;
+	grid-template-rows: 100px auto auto 150px;
 	grid-gap: var(--grid-gap);
 	margin: var(--grid-gap);
 }
 
 .header, .footer {
+	display: flex;
 	grid-column: 1/-1;
 	grid-gap: var(--grid-gap);
+	align-content: center;
+	justify-content: space-between;
 }
 
-.bio {
+.skill {
+	display: grid;
+	grid-template-rows: 10% auto;
+}
+
+.skill ul {
+	display: flex;
+	justify-content: flex-start;
+	text-indent: 15px;
+	flex-wrap: wrap;
+}
+
+#link1, #link2 {
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+.links {
+	margin-top: 15px;
+	align-items: center;
+
+}
+
+.about-me {
 	display: flex;
 	flex-direction: column;
 	background-color: red;
 }
 
+.bio {
+	margin-top: 5px;
+}
+
+.contact-info {
+	margin-top: 10px;
+}
+
 .skills {
 	display: flex;
+	justify-content: center;
+}
+
+.list-of-skills {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkedin {
+	display: flex;
+	margin-top: auto;
 }
 
 .main__content{
@@ -50,20 +96,8 @@
 	grid-gap: var(--grid-gap);		
 }
 
-
-.linkedin {
-	margin-bottom: 7px;
-}
-
-.about-me {
-	font-size: 30px;
-}
-
-.biography {
-	margin-top: 5px;
-}
-
-.linkedin {
+.projects {
 	display: flex;
-	margin-top: auto;
+	grid-column: 1/-1;
+	justify-content: space-between; 
 }

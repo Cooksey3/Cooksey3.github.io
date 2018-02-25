@@ -8,25 +8,45 @@
 
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
     <div class="container">
-        <header class="header">Chris Cooksey</header>
+        <header class="header">
+            <h1 id="name">Chris Cooksey</h1>
+            <nav class="links">
+                <a id="link1" href="#about-me">About Me</a>
+                <i class="divider">|</i>
+                <a id="link2" href="#projects">Projects</a>
+            </nav>
+        </header>
         <div class="main_left_sidebar">
-            <section class="bio">
-            	<h2 class="about-me">Bio</h2>
-            	<p class="biography">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games.
-				<nav class="linkedin">LinkedIn:<a href="https://www.linkedin.com/in/chris-cooksey">Chris Cooksey</a></nav>
-				</section>
-            <section class="skill">
+            <section id="about-me">
+                <img id="picture" src="resources/portfolio-picture.jpg" source=width: 100px;>
+            	<h2>Bio</h2>
+            	<p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games.
+                <div class="contact-info">
+    				<nav class="linkedin">LinkedIn:<a href="https://www.linkedin.com/in/chris-cooksey">Chris Cooksey</a></nav>
+                    <nav class="github">GitHub:<a href="https://github.com/Cooksey3">Cooksey3</a></nav>
+                    <nav class="email">Email: chris@cookseys.org</nav> 
+                </div>
+			</section>
+            <section>
             	<h2 class="skills">Skills</h2>
-            	<ul>
-            		<li>OOP</li>
-					<li>Java</li>
-					<li>Spring</li>
-					<li>HTML/CSS</li>
-					<li>TDD</li>
-					<li>OOP</li>
+            	<ul class="list-of-skills">
+            		<li id="listitem1">OOP</li>
+                    <li class="divider">|</li>
+					<li id="listitem2">Java</li>
+                    <li class="divider">|</li>
+					<li id="listitem3">Spring</li>
+                    <li class="divider">|</li>
+					<li id="listitem4">HTML/CSS</li>
+                    <li class="divider">|</li>
+					<li id="listitem5">TDD</li>
+                    <li class="divider">|</li>
+                    <li id="listitem6">Git</li>
             	</ul>
             </section>
         </div>
@@ -34,11 +54,11 @@
             <div class="main__content__item--1"></div>
             <div class="main__content__item--2"></div>
         </div>
-        <div class="main__right__sidebar">
-            <div class="main__sidebar__item--1">Project 1</div>
-            <div class="main__sidebar__item--2">Project 2</div>
-            <div class="main__sidebar__item--3">Project 3</div>
-        </div>
+        <section class="projects">
+            <article class="main__sidebar__item--1">Virtual Pet Shelter</article>
+            <article class="main__sidebar__item--2">Virtual Pets Amok!</article>
+            <article class="main__sidebar__item--3">Bank Account</article>
+        </section>
         <footer class="footer">Footer</footer>
     </div>
 </body>

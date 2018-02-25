@@ -3,21 +3,19 @@
 * {
     font: 700 16px 'Open Sans', sans-serif;
     color: black;
-    background-color: white;
+    background-color: beige;
 }
 
 .container {
-	background-color: white;
 }
+
 .footer {
-    background-color: white;
     color: black;
     border-top: solid;
     border-width: 5px;
     border-color: black;
 }
 .header {
-    background-color: white;
     color: black;
     border-bottom: solid;
     border-color: black;
@@ -25,35 +23,36 @@
     font-size: 50px;
 }
 
+#name {
+    font-size: 40px;
+}
+
 .bio {
 	border-width: 5px;
 	border-bottom: solid;
 }
 
-.skill {
-	display: grid;
-	grid-template-rows: 10% auto;
-	list-style-type: none;
+#link1, #link2 {
+    text-decoration: none;
 }
 
-.skill ul li {
-	
+.list-of-skills {
+    list-style-type: none;
+    text-indent: 5px;
+}
+
+#picture {
+    height: 50%;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.dot {
+    margin-top: 10%;
 }
 
 .main__content__item--1,
 .main__content__item--2 {
     background-color: peru;
-    color: orangered;
     border-radius: 7px;
-}
-.main__sidebar__item--1,
-.main__sidebar__item--2,
-.main__sidebar__item--3 {
-    background-color: white;
-}
-.left__item1,
-.left__item2,
-.left__item3,
-.left__item4 {
-    background-color: white;
 }
