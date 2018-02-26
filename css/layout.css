@@ -115,3 +115,8 @@
 	grid-column: 1/-1;
 	justify-content: space-between; 
 }
+
+.course-pictures {
+	display: flex;
+	justify-content: space-between;
+}

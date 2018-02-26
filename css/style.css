@@ -36,6 +36,11 @@
     text-decoration: none;
 }
 
+.skills {
+    border-bottom: solid;
+    border-top: solid;
+}
+
 .list-of-skills {
     list-style-type: none;
     text-indent: 5px;
@@ -66,4 +71,8 @@
 
 .nav-bar {
     align-items: flex-end;
+}
+
+.more-info {
+    border-bottom: solid;
 }
