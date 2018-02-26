@@ -11,7 +11,7 @@
 .container{
 	display: grid;
 	grid-template-columns: 2fr 3fr;
-	grid-template-rows: 100px auto auto 150px;
+	grid-template-rows: 100px auto auto auto 150px;
 	grid-gap: var(--grid-gap);
 	margin: var(--grid-gap);
 }
@@ -96,8 +96,22 @@
 	grid-gap: var(--grid-gap);		
 }
 
+
+.project-nav {
+	display: flex;
+	grid-column: 1/-1;
+	justify-content: space-around;
+}
+
+.links i {
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+
 .projects {
 	display: flex;
+	flex-direction: column;
 	grid-column: 1/-1;
 	justify-content: space-between; 
 }

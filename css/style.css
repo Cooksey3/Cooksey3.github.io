@@ -56,3 +56,14 @@
     background-color: peru;
     border-radius: 7px;
 }
+
+#projects {
+    border-top: solid;
+    border-bottom: solid;
+    border-spacing: 100px;
+    border-radius: 5px;   
+}
+
+.nav-bar {
+    align-items: flex-end;
+}
