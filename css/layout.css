@@ -10,8 +10,8 @@
 
 .container{
 	display: grid;
-	grid-template-columns: 2fr 3fr;
-	grid-template-rows: 100px auto auto auto 150px;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: repeat(5, auto);
 	grid-gap: var(--grid-gap);
 	margin: var(--grid-gap);
 }
@@ -50,7 +50,6 @@
 .about-me {
 	display: flex;
 	flex-direction: column;
-	background-color: red;
 }
 
 .bio {
@@ -119,4 +118,9 @@
 .course-pictures {
 	display: flex;
 	justify-content: space-between;
+}
+
+.hospital-app {
+	display: flex;
+	flex-direction: column;
 }

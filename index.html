@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <header id="header" class="header">
             <h1 id="name">Chris Cooksey</h1>
             <nav class="links">
                 <a id="link1" href="#about-me">About Me</a>
@@ -22,19 +22,15 @@
                 <a id="link2" href="#projects">Projects</a>
             </nav>
         </header>
-        <div class="main_left_sidebar">
+            <img id="picture" src="resources/portfolio-picture.jpg">
             <section id="about-me">
-                <img id="picture" src="resources/portfolio-picture.jpg" source=width: 100px;>
-            	<h2>Bio</h2>
-            	<p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games.
+                <h2 class="bio">Bio</h2>
+                <p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games.
                 <div class="contact-info">
                     <h2>Social media & contact info:</h2>
-    				<nav>LinkedIn: <a href="https://www.linkedin.com/in/chris-cooksey">Chris Cooksey</a></nav>
+                    <nav>LinkedIn: <a href="https://www.linkedin.com/in/chris-cooksey">Chris Cooksey</a></nav>
                     <nav>GitHub: <a href="https://github.com/Cooksey3">Cooksey3</a></nav>
                     <nav>Email: chris@cookseys.org</nav> 
-                </div>
-			</section>
-            <section>
             	<h2 class="skills">Skills</h2>
             	<ul class="list-of-skills">
             		<li id="listitem1">OOP</li>
@@ -50,11 +46,6 @@
                     <li id="listitem6">Git</li>
             	</ul>
             </section>
-        </div>
-        <div class="main__content">
-            <div class="main__content__item--1"></div>
-            <div class="main__content__item--2"></div>
-        </div>
         <section id="projects" class="project-nav">
 <!--             <nav class="nav-bar"> -->
                 <a class="projects-nav" href="#courses">Course Catalogue</a>
@@ -66,15 +57,16 @@
         </section>
         <section class="projects">
             <article id="courses">
-                <p>Sample curriculum of full-stack Java courses</p>
+                <h2>Sample curriculum of full-stack Java courses</h2>
                 <section class="course-pictures">
                     <img id="courses" src="resources/courses.jpg" width="60%" height="450";>
                     <img id="course" src="resources/course.jpg" width="25%" height="450";>
                 </section>
                 <nav class="more-info">More project info can be found at: <a href="https://github.com/Cooksey3/courses">Courses</a></nav>
+                <p class="skills-used">Skills used: TDD, OOP, Java, HTML, Spring</p>
             </article>
             <article id="pet">
-                <p>Virtual pet shelter to simulate caring for pets</p>
+                <h2>Virtual pet shelter to simulate caring for pets</h2>
                 <section class="pets-app">
                     <p class="beginning">Admit cats and dogs to the pet shelter</p>
                     <img id="pets" src="resources/pets.jpg" width="70%" height="450";>
@@ -82,18 +74,21 @@
                     <img id="pets2" src="resources/pets2.jpg" width="70%" height="450";>
                 </section>
                 <nav class="more-info">More project info can be found at: <a href="https://github.com/Cooksey3/virtual-pets-amok">Virtual Pets Amok!</a></nav>
+                <p class="skills-used">Skills used: TDD, OOP, Java</p>
             </article> 
-            <article id="bank">
-                <p>Bank transactions simulator</p>
-                <section class="course-pictures">
-
-                    <img id="course" src="resources/course.jpg" width="25%" height="450";>
+            <article id="hospital">
+                <h2>Hospital employee database</h2>
+                <section class="hospital-app">
+                    <p>Track employee information, including the responsibilities of each employee</p>
+                    <img id="course" src="resources/hospital.jpg" width="40%" height="450";>
                 </section>
-                <nav class="more-info">More project info can be found at: <a href="https://github.com/Cooksey3/courses">Courses</a></nav>
-
+                <nav class="more-info">More project info can be found at: <a href="https://github.com/Cooksey3/hospital">Hospital</a></nav>
+                <p class="skills-used">Skills used: TDD, OOP, Java</p>
             </article>
         </section>
-        <footer class="footer">Footer</footer>
+        <footer class="footer">
+            <a id="header-link" href="#header">Back to top</a>
+        </footer>
     </div>
 </body>
 </html>

@@ -30,6 +30,7 @@
 .bio {
 	border-width: 5px;
 	border-bottom: solid;
+    font-style: italic;
 }
 
 #link1, #link2 {
@@ -47,19 +48,13 @@
 }
 
 #picture {
-    height: 50%;
-    width: 50%;
+    height: 80%;
+    width: 100%;
     border-radius: 5px;
 }
 
 .dot {
     margin-top: 10%;
-}
-
-.main__content__item--1,
-.main__content__item--2 {
-    background-color: peru;
-    border-radius: 7px;
 }
 
 #projects {
@@ -73,6 +68,7 @@
     align-items: flex-end;
 }
 
-.more-info {
+.skills-used {
     border-bottom: solid;
+    font-style: italic;
 }
