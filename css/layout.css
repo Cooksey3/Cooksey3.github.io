@@ -18,10 +18,17 @@
 
 .header, .footer {
 	display: flex;
+	height: 100px;
 	grid-column: 1/-1;
 	grid-gap: var(--grid-gap);
 	align-content: center;
 	justify-content: space-between;
+}
+
+#about-me {
+	display: flex;
+	border: solid;
+	border-color: black;
 }
 
 .skill {
@@ -47,10 +54,6 @@
 
 }
 
-.about-me {
-	display: flex;
-	flex-direction: column;
-}
 
 .bio {
 	margin-top: 5px;

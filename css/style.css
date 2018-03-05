@@ -3,7 +3,7 @@
 * {
     font: 700 16px 'Open Sans', sans-serif;
     color: black;
-    background-color: beige;
+    background-color: #F0F8FF;
 }
 
 .container {
@@ -17,7 +17,8 @@
 }
 .header {
     color: black;
-    border-bottom: solid;
+    border: solid;
+    margin: 0;
     border-color: black;
     border-width: 5px;
     font-size: 50px;
