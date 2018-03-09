@@ -10,28 +10,23 @@
 }
 
 .footer {
-    color: black;
-    border-top: solid;
-    border-width: 5px;
+    color: lightgray;
+    background-color: black;
     border-color: black;
 }
 .header {
-    color: lightgrey;
     background-color: black;
     border: solid;
-    /*margin: 0;*/
-    border-color: black;
-    /*border-width: 5px;*/
     font-size: 50px;
 }
 
 .name {
     font-size: 40px;
+    color: lightgray;
 }
 
 .bio {
 	border-width: 5px;
-	border-bottom: solid;
     font-style: italic;
 }
 
@@ -41,25 +36,14 @@
     margin-right: 5rem;
 }
 
-#linkedIn {
-    color: #fff;
-}
-
-.skills {
-    border-bottom: solid;
-    border-top: solid;
-}
-
 .list-of-skills {
     list-style-type: none;
     text-indent: 5px;
 }
 
 #picture {
-    height: 300px;
-    width: 190px;
-    border-radius: 5px;
-    flex-basis: 250px;
+    /*border-radius: 50%;*/
+    /*flex-basis: 250px;*/
     box-shadow: 5px 5px;
 }
 
@@ -75,14 +59,42 @@
 }
 
 .contact-info {
-    justify-content: space-around;
 }
 
 .nav-bar {
     align-items: flex-end;
 }
 
+.items {
+    list-style-type: none;
+}
+
 .skills-used {
     border-bottom: solid;
     font-style: italic;
+}
+
+.skills {
+    display: flex;
+    align-items: space-around;
+}
+
+#linkedIn {
+    background-color: white;
+}
+
+#email {
+    background-color: white;
+    color: red;
+    font-size: 0em;
+}
+
+#header-link {
+    color: lightgray;
+    margin-right: 20rem; 
+    text-decoration: none;
+}
+
+#email {
+    color: red;
 }

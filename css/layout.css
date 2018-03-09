@@ -10,18 +10,19 @@
 
 .container{
 	display: grid;
-	grid-template-columns: auto 3fr;
-	grid-template-rows: repeat(5, auto);
+	height: 100vh;
+	grid-template-columns: 3fr;
+	/*grid-template-rows: repeat(2, auto) 100px;*/
 	grid-gap: var(--grid-gap);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .header, .footer {
 	display: flex;
-	height: 100px;
-	width: 100vw;
 	grid-column: 1/-1;
 	justify-content: space-between;
-	margin-right: 50px;
 }
 
 .header {
@@ -32,16 +33,22 @@
 	margin-left: 50px;
 }
 
-#about-me {
-	display: flex;
-	flex-direction: column;
-	border: solid;
-	border-color: black;
-	justify-content: space-between;
+#picture {
+	width: 29.99rem;
+	height: 20rem;
 }
 
-#linkedIn {
-	border-radius: 5px;
+#about-me {
+	grid-column: 1/-1;
+	height: 85%;
+	display: flex;
+	border: solid;
+	border-color: black;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#linked-in {
 }
 
 .skill {
@@ -63,19 +70,11 @@
 
 .links {
 	display: flex;
-	/*justify-content: center;*/
-}
-
-.divider {
-	margin-right: 3rem;
-	margin-right: 3rem;
 }
 
 .contact-info {
 	display: flex;
-	margin-top: 10px;
-	justify-content: center;
-	align-content: center;
+    /*justify-content: space-around;*/
 }
 
 .skills {
@@ -83,36 +82,27 @@
 	justify-content: center;
 }
 
+.bio {
+	width: 30em;
+	align-self: center;
+}
+
 .list-of-skills {
 	display: flex;
+	flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.items {
+	text-indent: 1.5rem;
 }
 
 .linkedin {
 	display: flex;
 	margin-top: auto;
+	font-size: 200px;
 }
-
-.main__content{
-	display: grid;
-	grid-template-rows: repeat(2, 1fr);	
-	grid-gap: var(--grid-gap);
-
-}
-
-.main__right__sidebar{
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);	
-	grid-gap: var(--grid-gap);	
-}
-
-.main_left_sidebar{
-	display: grid;
-	grid-template-rows: repeat(2, 1fr);	
-	grid-gap: var(--grid-gap);		
-}
-
 
 .project-nav {
 	display: flex;
@@ -124,7 +114,6 @@
 	margin-left: 35px;
 	margin-right: 35px;
 }
-
 
 .projects {
 	display: flex;
@@ -141,4 +130,20 @@
 .hospital-app {
 	display: flex;
 	flex-direction: column;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 50px;
+}
+
+#linkedIn {
+	margin-right: 1rem;
+	margin-left: 3rem;
+} 
+
+#github {
+	margin-right: 1rem;
 }
