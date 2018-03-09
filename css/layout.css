@@ -13,22 +13,35 @@
 	grid-template-columns: auto 3fr;
 	grid-template-rows: repeat(5, auto);
 	grid-gap: var(--grid-gap);
-	margin: var(--grid-gap);
 }
 
 .header, .footer {
 	display: flex;
 	height: 100px;
+	width: 100vw;
 	grid-column: 1/-1;
-	grid-gap: var(--grid-gap);
-	align-content: center;
 	justify-content: space-between;
+	margin-right: 50px;
+}
+
+.header {
+	height: auto;
+}
+
+.name {
+	margin-left: 50px;
 }
 
 #about-me {
 	display: flex;
+	flex-direction: column;
 	border: solid;
 	border-color: black;
+	justify-content: space-between;
+}
+
+#linkedIn {
+	border-radius: 5px;
 }
 
 .skill {
@@ -49,18 +62,20 @@
 }
 
 .links {
-	margin-top: 15px;
-	align-items: center;
-
+	display: flex;
+	/*justify-content: center;*/
 }
 
-
-.bio {
-	margin-top: 5px;
+.divider {
+	margin-right: 3rem;
+	margin-right: 3rem;
 }
 
 .contact-info {
+	display: flex;
 	margin-top: 10px;
+	justify-content: center;
+	align-content: center;
 }
 
 .skills {

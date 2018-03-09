@@ -2,11 +2,11 @@
 
 * {
     font: 700 16px 'Open Sans', sans-serif;
-    color: black;
-    background-color: #F0F8FF;
 }
 
 .container {
+    color: black;
+    background-color: #F0F8FF;
 }
 
 .footer {
@@ -16,11 +16,12 @@
     border-color: black;
 }
 .header {
-    color: black;
+    color: lightgrey;
+    background-color: black;
     border: solid;
-    margin: 0;
+    /*margin: 0;*/
     border-color: black;
-    border-width: 5px;
+    /*border-width: 5px;*/
     font-size: 50px;
 }
 
@@ -36,6 +37,12 @@
 
 #link1, #link2 {
     text-decoration: none;
+    color: lightgrey;
+    margin-right: 5rem;
+}
+
+#linkedIn {
+    color: #fff;
 }
 
 .skills {
@@ -53,6 +60,7 @@
     width: 190px;
     border-radius: 5px;
     flex-basis: 250px;
+    box-shadow: 5px 5px;
 }
 
 .dot {
@@ -64,6 +72,10 @@
     border-bottom: solid;
     border-spacing: 100px;
     border-radius: 5px;   
+}
+
+.contact-info {
+    justify-content: space-around;
 }
 
 .nav-bar {
