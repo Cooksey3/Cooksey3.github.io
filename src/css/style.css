@@ -33,12 +33,17 @@
 #link1, #link2 {
     text-decoration: none;
     color: lightgrey;
-    margin-right: 5rem;
 }
 
 .list-of-skills {
     list-style-type: none;
     text-indent: 5px;
+}
+.container > header nav ul {
+    background-color: white;
+    display: none;
+    left: -47px;
+    position: absolute;
 }
 
 #picture {
@@ -79,6 +84,10 @@
     align-items: space-around;
 }
 
+#skills {
+    align-self: center;
+}
+
 #linkedIn {
     background-color: white;
 }
@@ -97,4 +106,55 @@
 
 #email {
     color: red;
+}
+
+/* Dropdown Button */
+.menu {
+    background-color: black;
+    color: lightgray;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    align-self: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    color: lightgray;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: darkgray;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: darkgray;
 }

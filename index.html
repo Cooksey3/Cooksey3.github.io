@@ -7,8 +7,8 @@
 
     <title>Chris's Portfolio</title>
 
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/css/layout.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
     <!-- Font awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -17,38 +17,49 @@
     <div class="container">
         <header id="header" class="header">
             <h1 class="name">Chris Cooksey</h1>
-            <div class="links">
-                <a id="link1" href="#about-me">About Me</a>
-                <a id="link2" href="#projects">Projects</a>
-            </div>
+            <section class="dropdown">
+                <button class="menu">Menu</button>
+                <nav id="myDropdown" class="dropdown-content">
+                    <a id="link1" href="#about-me">About Me</a>
+                    <a id="link2" href="#projects">Projects</a>
+                </nav>
+            </section>
+<!--            <button class="dropbtn">MENU</button>
+                <nav class=".dropdown-content">
+
+                </nav>
+            </section> -->
         </header>
         <section id="about-me">
             <!-- <p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games. -->
             <img id="picture" src="resources/adirondacks.jpg">
-                <ul class="back-end">Back end:
-                    <li class="items" id="listitem1">Java</li>
-                    <li class="items" id="listitem2">OOP</li>
-                    <li class="items" id="listitem3">Spring MVC</li>
-                    <li class="items" id="listitem4">SQL</li>
-                    <li class="items" id="listitem5">TDD</li>
-                </ul>
-            	<ul class="front-end">Front end:
-                    <li class="items" id="listitem6">HTML5</li>
-                    <li class="items" id="listitem7">CSS3</li>
-                    <li class="items" id="listitem8">TDD</li>
-                    <li class="items" id="listitem9">Flexbox</li>
-                    <li class="items" id="listitem10">jQuery</li>
-            	</ul>
-                <ul class="front-end">Other:
-                    <li class="items" id="listitem1">Java</li>
-                    <li class="items" id="listitem2">OOP</li>
-                    <li class="items" id="listitem3">Spring</li>
-                    <li class="items" id="listitem4">HTML5</li>
-                    <li class="items" id="listitem5">CSS3</li>
-                    <li class="items" id="listitem6">TDD</li>
-                    <li class="items" id="listitem7">Git</li>
-                </ul>
-        </section>
+<!--             <div class="skills">
+                <h2 id="skills">Skills:</h2>
+                <section class="skills-list">
+ -->                    <ul class="back-end">Back end:
+                        <li class="items" id="listitem1">Java</li>
+                        <li class="items" id="listitem2">OOP</li>
+                        <li class="items" id="listitem3">Spring</li>
+                        <li class="items" id="listitem4">SQL</li>
+                        <li class="items" id="listitem5">TDD</li>
+                    </ul>
+                	<ul class="front-end">Front end:
+                        <li class="items" id="listitem6">HTML5</li>
+                        <li class="items" id="listitem7">CSS3</li>
+                        <li class="items" id="listitem8">TDD</li>
+                        <li class="items" id="listitem9">Flexbox</li>
+                        <li class="items" id="listitem10">jQuery</li>
+                	</ul>
+                    <ul class="other">Relational:
+                        <li class="items" id="listitem11">Git</li>
+                        <li class="items" id="listitem12">Leadership</li>
+                        <li class="items" id="listitem13">Presentation</li>
+                        <li class="items" id="listitem14">Management</li>
+                        <li class="items" id="listitem15">Everything</li>
+                    </ul>
+<!--                 </section>
+            </div>
+ -->        </section>
 <!--         <section id="projects" class="project-nav">
             <nav class="nav-bar">
                 <a class="projects-nav" href="#courses">Course Catalogue</a>
@@ -90,7 +101,7 @@
             </article>
         </section>
  -->    <footer class="footer">
-            <a id="header-link" href="#header">Back to top</a>
+            <button>About me</button>
             <div class="contact-info">
                 <nav id="linkedIn"><a href="https://www.linkedin.com/in/chris-cooksey"><i class="fab fa-linkedin" style="color: #0073b1"></i></a></nav>
                 <nav id="github"><a href="https://github.com/Cooksey3"><i class="fab fa-github" style="color: white"></i></a></nav>
@@ -98,5 +109,6 @@
             </div>
         </footer>
     </div>
+    <script src="./src/js/app.js"></script>
 </body>
 </html>

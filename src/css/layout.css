@@ -78,9 +78,21 @@
 }
 
 .skills {
+	height: 25rem;
+	flex-direction: column;
 	display: flex;
-	justify-content: center;
+	/*justify-content: center;*/
+	/*align-items: stretch;*/
 }
+
+.skills-list {
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
 
 .bio {
 	width: 30em;
