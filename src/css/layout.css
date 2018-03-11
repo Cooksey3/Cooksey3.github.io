@@ -12,11 +12,12 @@
 	display: grid;
 	height: 100vh;
 	grid-template-columns: 3fr;
-	/*grid-template-rows: repeat(2, auto) 100px;*/
+	grid-template-rows: 70px auto 24% 50px;
 	grid-gap: var(--grid-gap);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    /*-webkit-box-sizing:border-box;*/
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background: black; 
 }
 
 .header, .footer {
@@ -40,10 +41,7 @@
 
 #about-me {
 	grid-column: 1/-1;
-	height: 85%;
 	display: flex;
-	border: solid;
-	border-color: black;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -148,7 +146,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	height: 50px;
 }
 
 #linkedIn {
@@ -158,4 +155,12 @@
 
 #github {
 	margin-right: 1rem;
+}
+
+.trigger {
+	margin-right: 50%;
+	background-color: black;
+	color: lightgray;
+	border: none;
+	cursor: pointer;
 }

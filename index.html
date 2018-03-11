@@ -20,7 +20,6 @@
             <section class="dropdown">
                 <button class="menu">Menu</button>
                 <nav id="myDropdown" class="dropdown-content">
-                    <a id="link1" href="#about-me">About Me</a>
                     <a id="link2" href="#projects">Projects</a>
                 </nav>
             </section>
@@ -31,45 +30,37 @@
             </section> -->
         </header>
         <section id="about-me">
-            <!-- <p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games. -->
             <img id="picture" src="resources/adirondacks.jpg">
-<!--             <div class="skills">
-                <h2 id="skills">Skills:</h2>
-                <section class="skills-list">
- -->                    <ul class="back-end">Back end:
-                        <li class="items" id="listitem1">Java</li>
-                        <li class="items" id="listitem2">OOP</li>
-                        <li class="items" id="listitem3">Spring</li>
-                        <li class="items" id="listitem4">SQL</li>
-                        <li class="items" id="listitem5">TDD</li>
-                    </ul>
-                	<ul class="front-end">Front end:
-                        <li class="items" id="listitem6">HTML5</li>
-                        <li class="items" id="listitem7">CSS3</li>
-                        <li class="items" id="listitem8">TDD</li>
-                        <li class="items" id="listitem9">Flexbox</li>
-                        <li class="items" id="listitem10">jQuery</li>
-                	</ul>
-                    <ul class="other">Relational:
-                        <li class="items" id="listitem11">Git</li>
-                        <li class="items" id="listitem12">Leadership</li>
-                        <li class="items" id="listitem13">Presentation</li>
-                        <li class="items" id="listitem14">Management</li>
-                        <li class="items" id="listitem15">Everything</li>
-                    </ul>
-<!--                 </section>
-            </div>
- -->        </section>
-<!--         <section id="projects" class="project-nav">
-            <nav class="nav-bar">
-                <a class="projects-nav" href="#courses">Course Catalogue</a>
-                <i class="divider">|</i>
-                <a class="projects-nav" href="#pet">Virtual Pet Siumulator</a>
-                <i class="divider">|</i>
-                <a class="projects-nav" href="#bank">Banking App</a>
-            </nav>
+            <ul class="back-end">Back end:
+                <li class="items" id="listitem1">Java</li>
+                <li class="items" id="listitem2">OOP</li>
+                <li class="items" id="listitem3">Spring</li>
+                <li class="items" id="listitem4">SQL</li>
+                <li class="items" id="listitem5">TDD</li>
+            </ul>
+        	<ul class="front-end">Front end:
+                <li class="items" id="listitem6">HTML5</li>
+                <li class="items" id="listitem7">CSS3</li>
+                <li class="items" id="listitem8">TDD</li>
+                <li class="items" id="listitem9">Flexbox</li>
+                <li class="items" id="listitem10">jQuery</li>
+        	</ul>
+            <ul class="other">Relational:
+                <li class="items" id="listitem11">Git</li>
+                <li class="items" id="listitem12">Leadership</li>
+                <li class="items" id="listitem13">Presentation</li>
+                <li class="items" id="listitem14">Management</li>
+                <li class="items" id="listitem15">Everything</li>
+            </ul>
         </section>
- --><!--         <section class="projects">
+        <section class="image-slider">
+            <ul id="image_slider">
+                <li><img class="slider-image" src="resources/pets.jpg"></li>
+                <li><img class="slider-image" src="resources/adirondacks.jpg"></li>
+                <li><img class="slider-image" src="resources/adirondacks.jpg"></li>
+            </ul> 
+        </section>
+ <!--         <section class="projects">
             <article id="courses">
                 <h2>Sample curriculum of full-stack Java courses</h2>
                 <section class="course-pictures">
@@ -101,7 +92,13 @@
             </article>
         </section>
  -->    <footer class="footer">
-            <button>About me</button>
+            <button class="trigger">About me</button>
+            <section class="about-me">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based, full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games.</p>
+                </div>
+            </section>
             <div class="contact-info">
                 <nav id="linkedIn"><a href="https://www.linkedin.com/in/chris-cooksey"><i class="fab fa-linkedin" style="color: #0073b1"></i></a></nav>
                 <nav id="github"><a href="https://github.com/Cooksey3"><i class="fab fa-github" style="color: white"></i></a></nav>
