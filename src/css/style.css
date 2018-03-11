@@ -209,6 +209,8 @@
 }
 
 .image-slider{
+    display: flex;
+    justify-content: space-around;
     overflow: hidden;
 }
 #image_slider{
