@@ -16,8 +16,6 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
-// carousel();
-
 let carousels = document.getElementsByClassName('image-carousel');
 
 [].forEach.call(carousels, function (c) {
@@ -27,7 +25,7 @@ let carousels = document.getElementsByClassName('image-carousel');
         inner = c.getElementsByClassName('inner')[0],
         imgs = inner.getElementsByTagName('img'),
         currentImageIndex = 0,
-        width = 640,
+        width = 10,
         bubbles = [];
 
     for (let i = 0; i < imgs.length; i++) {
@@ -43,7 +41,7 @@ let carousels = document.getElementsByClassName('image-carousel');
     }
 
     function switchImg () {
-        inner.style.left = -width * currentImageIndex + 'px';
+        inner.style.left = -width * currentImageIndex + 'rem';
         
         bubbles.forEach(function (b, i) {
             if (i === currentImageIndex) {

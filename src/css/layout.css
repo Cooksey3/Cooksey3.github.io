@@ -12,9 +12,8 @@
 	display: grid;
 	height: 100vh;
 	grid-template-columns: 3fr;
-	grid-template-rows: 70px auto 24% 50px;
+	grid-template-rows: 70px auto 26% 50px;
 	grid-gap: var(--grid-gap);
-    /*-webkit-box-sizing:border-box;*/
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     background: black; 
@@ -35,8 +34,8 @@
 }
 
 #picture {
-	width: 29.99rem;
-	height: 20rem;
+	width: 26.991rem;
+	height: 18rem;
 }
 
 #about-me {

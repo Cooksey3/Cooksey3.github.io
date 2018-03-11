@@ -213,13 +213,19 @@
     justify-content: center;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .image-carousel {
     display: flex;
     grid-column: 1/-1;
     justify-content: center;
     width: 10rem;
-    height: 10rem;
-    overflow: hidden;
+    height: 12rem;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -267,4 +273,9 @@
 .prev::after {
     content: '<';
     left: 0;
+}
+
+.image {
+    height: 10rem;
+    width: 10rem;
 }
