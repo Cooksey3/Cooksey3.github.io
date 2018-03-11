@@ -225,7 +225,7 @@
     list-style: none;
 }
 
-.slider-image {
+.slider1-image, .slider2-image, .slider3-image {
     height: 10rem;
     width: 10rem;
 }
