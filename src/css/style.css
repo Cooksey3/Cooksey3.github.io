@@ -113,6 +113,11 @@
     cursor: pointer;
 }
 
+.review {
+    color: lightgray;
+    background-color: #F0F8FF;
+}
+
 .modal-content {
     background-color: black;
     border-radius: 0.5rem;
