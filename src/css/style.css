@@ -39,7 +39,6 @@
     text-indent: 5px;
 }
 .container > header nav ul {
-    background-color: white;
     display: none;
     left: -47px;
     position: absolute;
@@ -54,13 +53,13 @@
 }
 
 #linkedIn {
-    background-color: white;
+    /*background-color: white;*/
     font: 0;
 }
 
 #email {
-    background-color: white;
-    color: red;
+/*    background-color: white;
+*/    color: red;
     font-size: 0em;
 }
 
