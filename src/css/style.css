@@ -4,7 +4,7 @@
     font: 700 16px 'Open Sans', sans-serif;
 }
 
-.container {
+.container-home, .container-projects {
     color: black;
     background-color: #F0F8FF;
 }
@@ -48,9 +48,7 @@
 }
 
 #picture {
-    /*border-radius: 50%;*/
-    /*flex-basis: 250px;*/
-    box-shadow: #cacaca 5px 5px 5px;
+   box-shadow: #cacaca 5px 5px 5px;
 }
 
 .dot {
@@ -263,4 +261,64 @@ figure a {
 .image {
     height: 10rem;
     width: 10rem;
+}
+
+/*Project specific style*/
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: black;
+    color: lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.description {
+    background-color: black;
+    color: lightgray;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.project-dropdown {
+    width: 250px;
+    position: relative;
+    color: lightgray;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.description-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.description-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.description-content a:active {
+    background-color: darkgray;
+}
+
+.project-dropdown:active .dropdown-content {
+    display: block;
+}
+
+.project-dropdown:active .dropbtn {
+    color: darkgray;
 }

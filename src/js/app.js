@@ -1,22 +1,4 @@
-const modal = document.querySelector(".about-me");
-const trigger = document.querySelector(".trigger");
-const closeButton = document.querySelector(".close-button");
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-let carousels = document.getElementsByClassName('image-carousel');
+const carousels = document.getElementsByClassName('image-carousel');
 
 [].forEach.call(carousels, function (c) {
     let next = c.getElementsByClassName('next')[0],
@@ -29,7 +11,7 @@ let carousels = document.getElementsByClassName('image-carousel');
         bubbles = [];
 
     for (let i = 0; i < imgs.length; i++) {
-        let b = document.createElement('span');
+        const b = document.createElement('span');
         b.classList.add('bubble');
         bubblesContainer.appendChild(b);
         bubbles.push(b);
@@ -74,3 +56,4 @@ let carousels = document.getElementsByClassName('image-carousel');
 
     switchImg();
 });
+

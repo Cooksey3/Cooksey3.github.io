@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Chris's Portfolio</title>
+
+    <link rel="stylesheet" href="./src/css/layout.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+    <div class="container-projects">
+        <header id="header" class="header">
+            <h1 class="name">Projects</h1>
+            <section class="dropdown">
+                <button class="menu">Menu</button>
+                <nav id="myDropdown" class="dropdown-content">
+                    <a id="link2" href="./index.html">Home</a>
+                </nav>
+            </section>
+        </header>
+        <section class="projects">
+        	<div class="cards">
+	        	<div class="card">
+					<img class="project-image" src="resources/harrypotter.jpg">
+					<section class="project-dropdown">
+		                <button class="description">Description</button>
+		                <p class="dropdown-content">Full stack, book review site. Search books based on genre. Created using Spring MVC, Java, CSS, Flex</p>
+		            </section>
+				</div>
+				<div class="card">
+					<img class="project-image" src="resources/virtualpets.jpg">
+					<section class="project-dropdown">
+		                <button class="description">Description</button>
+		                <p class="dropdown-content">Simulated virtual pet shelter, allowing the user to care for pets through console interaction. Created using Java, TDD, pair programming</p>
+		            </section>
+				</div>
+				<div class="card">
+					<img class="project-image" src="resources/catalogue.jpg">
+					<section class="project-dropdown">
+		                <button class="description">Description</button>
+		                <p class="dropdown-content">Sample course catalogue. Created using Spring MVC, Java, TDD</p>
+		            </section>
+				</div>
+			</div>
+        </section>
+        <footer class="footer">
+            <button class="trigger">About me</button>
+            <section class="about-me">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based, full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games.</p>
+                </div>
+            </section>
+            <div class="contact-info">
+                <nav id="linkedIn"><a href="https://www.linkedin.com/in/chris-cooksey"><i class="fab fa-linkedin" style="color: #0073b1"></i></a></nav>
+                <nav id="github"><a href="https://github.com/Cooksey3"><i class="fab fa-github" style="color: white"></i></a></nav>
+                <nav id="email"><a href="mailto:chris@cookseys.org"><i class="far fa-envelope" style="color: red"></i></a></nav>
+            </div>
+        </footer>
+    </div>
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/description.js"></script>
+    <script src="./src/js/modal.js"></script>
+</body>
+</html>

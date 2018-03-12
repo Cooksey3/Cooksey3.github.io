@@ -8,15 +8,12 @@
     --grid-gap: 20px;
 }
 
-.container{
+.container-home {
 	display: grid;
 	height: 100vh;
 	grid-template-columns: 3fr;
 	grid-template-rows: 70px auto 26% 50px;
 	grid-gap: var(--grid-gap);
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    background: black; 
 }
 
 .header, .footer {
@@ -156,4 +153,22 @@
 	color: lightgray;
 	border: none;
 	cursor: pointer;
+}
+
+/*Project specific layout*/
+.container-projects {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 3fr;
+	grid-template-rows: 70px auto 50px;
+	grid-gap: var(--grid-gap);
+}
+
+.cards {
+	display: flex;
+	justify-content: space-around;
+}
+
+.project-image {
+	max-height: 300px;
 }
