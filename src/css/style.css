@@ -10,7 +10,6 @@
 }
 
 .footer {
-    display: flex;
     color: lightgray;
     background-color: black;
     border-color: black;
@@ -27,7 +26,6 @@
 }
 
 .bio {
-	border-width: 5px;
     font-style: italic;
 }
 
@@ -51,40 +49,8 @@
    box-shadow: #cacaca 5px 5px 5px;
 }
 
-.dot {
-    margin-top: 10%;
-}
-
-#projects {
-    border-top: solid;
-    border-bottom: solid;
-    border-spacing: 100px;
-    border-radius: 5px;   
-}
-
-.contact-info {
-}
-
-.nav-bar {
-    align-items: flex-end;
-}
-
 .items {
     list-style-type: none;
-}
-
-.skills-used {
-    border-bottom: solid;
-    font-style: italic;
-}
-
-.skills {
-    display: flex;
-    align-items: space-around;
-}
-
-#skills {
-    align-self: center;
 }
 
 #linkedIn {
@@ -111,27 +77,18 @@
 .menu {
     background-color: black;
     color: lightgray;
-    padding: 16px;
     font-size: 16px;
     border: none;
-    align-self: center;
     cursor: pointer;
 }
 
 .dropdown {
-    position: relative;
     color: lightgray;
-    display: inline-block;
-    margin-right: 3rem;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
     background-color: black;
-    width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
 .dropdown-content a {
@@ -145,36 +102,20 @@
     background-color: darkgray;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown:hover .dropbtn {
     color: darkgray;
 }
 
 .about-me {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
-    transform: scale(1.1);
     color: lightgray;
     cursor: pointer;
 }
 
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: black;
-    padding: 1rem 1.5rem;
-    width: auto;
     border-radius: 0.5rem;
 }
 
@@ -186,10 +127,6 @@
 }
 
 .close-button {
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
     color: darkgray;
@@ -200,53 +137,12 @@
     color: lightgray;
 }
 
-
-.carousel {
-    display: flex;
-    justify-content: center;
-}
-
-figure a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image-carousel {
-    display: flex;
-    grid-column: 1/-1;
-    justify-content: center;
-    width: 10rem;
-    height: 12rem;
-    overflow-x: hidden;
-    position: relative;
-}
-
-.inner {
-        display: flex;
-        position: absolute;
-        left: 0;
-        transition: left 0.25s ease-out;
-}
-
 .next::after, .prev::after {
-    content: '>';
-    position: absolute;
-    top: 50%;
-    right: 0;
     background-color: white;
-    font-size: 20px;
-    width: 1em;
-    height: 3em;
     font-weight: bold;
     font-family: sans-serif;
-    transform: translateY(-50%);
-    line-height: 3em;
-    box-sizing: border-box;
-    padding: 0 0.2em;
     cursor: pointer;
     opacity: 0.5;
-    transition: opacity 0.1s linear;
 }
 
 .next:hover::after, .prev:hover::after {
@@ -258,20 +154,8 @@ figure a {
     left: 0;
 }
 
-.image {
-    height: 10rem;
-    width: 10rem;
-}
-
 /*Project specific style*/
 .card {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: auto;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-align: center;
     background-color: black;
     color: lightgray;
     border-top-left-radius: 5px;
@@ -281,44 +165,33 @@ figure a {
 .description {
     background-color: black;
     color: lightgray;
-    padding: 16px;
-    font-size: 16px;
     border: none;
-    cursor: pointer;
 }
 
 .project-dropdown {
-    width: 250px;
-    position: relative;
     color: lightgray;
-    display: inline-block;
-    margin-right: 3rem;
 }
 
 .description-content {
-    display: none;
-    position: absolute;
     background-color: black;
-    width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
 .description-content a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
 }
 
 .description-content a:active {
     background-color: darkgray;
 }
 
-.project-dropdown:active .dropdown-content {
-    display: block;
-}
-
 .project-dropdown:active .dropbtn {
     color: darkgray;
+}
+
+.trigger {
+    background-color: black;
+    color: lightgray;
+    cursor: pointer;
 }

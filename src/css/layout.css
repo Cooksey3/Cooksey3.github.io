@@ -76,8 +76,6 @@
 	height: 25rem;
 	flex-direction: column;
 	display: flex;
-	/*justify-content: center;*/
-	/*align-items: stretch;*/
 }
 
 .skills-list {
@@ -149,10 +147,7 @@
 
 .trigger {
 	margin-right: 50%;
-	background-color: black;
-	color: lightgray;
 	border: none;
-	cursor: pointer;
 }
 
 /*Project specific layout*/
@@ -171,4 +166,185 @@
 
 .project-image {
 	max-height: 300px;
+}
+
+.container > header nav ul {
+    display: none;
+    left: -47px;
+    position: absolute;
+}
+
+.nav-bar {
+    align-items: flex-end;
+}
+
+.skills {
+    display: flex;
+    align-items: space-around;
+}
+
+#skills {
+    align-self: center;
+}
+
+#header-link {
+    margin-right: 20rem; 
+}
+
+.menu {
+    padding: 16px;
+    font-size: 16px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.about-me {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transform: scale(1.1);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 1.5rem;
+    width: auto;
+    border-radius: 0.5rem;
+}
+
+.show-modal {
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+figure a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-carousel {
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: center;
+    width: 10rem;
+    height: 12rem;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.inner {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: left 0.25s ease-out;
+}
+
+.next::after, .prev::after {
+    content: '>';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 20px;
+    width: 1em;
+    height: 3em;
+    transform: translateY(-50%);
+    line-height: 3em;
+    box-sizing: border-box;
+    padding: 0 0.2em;
+    transition: opacity 0.1s linear;
+}
+
+.next:hover::after, .prev:hover::after {
+    opacity: 1;
+}
+
+.prev::after {
+    content: '<';
+    left: 0;
+}
+
+.image {
+    height: 10rem;
+    width: 10rem;
+}
+
+/*Project specific style*/
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.description {
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.project-dropdown {
+    width: 250px;
+    position: relative;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.description-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    z-index: 1;
+}
+
+.description-content a {
+    padding: 12px 16px;
+    display: block;
 }
