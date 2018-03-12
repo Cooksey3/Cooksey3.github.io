@@ -71,7 +71,8 @@
 
 .contact-info {
 	display: flex;
-    /*justify-content: space-around;*/
+	overflow-y: hidden;
+	margin-left: 
 }
 
 .skills {
@@ -107,11 +108,9 @@
 	text-indent: 1.5rem;
 }
 
-.linkedin {
-	display: flex;
-	margin-top: auto;
-	font-size: 200px;
-}
+#linkedIn {
+	margin-right: 1rem;
+} 
 
 .project-nav {
 	display: flex;
@@ -146,11 +145,6 @@
 	align-items: center;
 	justify-content: space-around;
 }
-
-#linkedIn {
-	margin-right: 1rem;
-	margin-left: 3rem;
-} 
 
 #github {
 	margin-right: 1rem;
