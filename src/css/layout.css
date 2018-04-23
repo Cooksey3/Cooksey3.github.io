@@ -11,35 +11,52 @@
 .container-home {
 	display: grid;
 	height: 100vh;
-	grid-template-columns: 3fr;
-	grid-template-rows: 70px auto 26% 50px;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 70px auto 50px;
 	grid-gap: var(--grid-gap);
 }
 
-.header, .footer {
+.header {
 	display: flex;
 	grid-column: 1/-1;
 	justify-content: space-between;
-}
-
-.header {
 	height: auto;
 }
 
-.name {
-	margin-left: 50px;
+#about-me {
+	grid-column: 1/6;
+	display: flex;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
 }
 
 #picture {
-	width: 26.991rem;
-	height: 18rem;
+/*	grid-column: 1/6;*/
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	max-width: 26.991rem;
+	max-height: 18rem;
 }
 
-#about-me {
-	grid-column: 1/-1;
+#skills {
+	grid-column: 6/-1;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.footer {
+	grid-column: 1/-1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+.name {
+	margin-left: 50px;
 }
 
 .links {
@@ -52,20 +69,11 @@
 	margin-left: 
 }
 
-.skills {
+.all-skills {
 	height: 25rem;
-	flex-direction: column;
 	display: flex;
-}
-
-.skills-list {
-	display: flex;
-	margin: auto;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: center;
 }
-
 
 .bio {
 	width: 30em;
@@ -115,12 +123,6 @@
 	flex-direction: column;
 }
 
-.footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
 #github {
 	margin-right: 1rem;
 }
@@ -130,7 +132,6 @@
 	border: none;
 }
 
-/*Project specific layout*/
 .container-projects {
 	display: grid;
 	height: 100vh;
@@ -156,11 +157,6 @@
 
 .nav-bar {
     align-items: flex-end;
-}
-
-.skills {
-    display: flex;
-    align-items: space-around;
 }
 
 #skills {
@@ -291,7 +287,6 @@ figure a {
     width: 10rem;
 }
 
-/*Project specific style*/
 .card {
     display: flex;
     flex-direction: column;
