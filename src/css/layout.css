@@ -141,6 +141,9 @@
 .cards {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	/*flex-basis: 100px;*/
 }
 
 .project-image {
@@ -260,8 +263,6 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: auto;
     text-align: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -274,10 +275,7 @@
 }
 
 .project-dropdown {
-    width: 250px;
     position: relative;
-    display: inline-block;
-    margin-right: 3rem;
 }
 
 .description-content {
