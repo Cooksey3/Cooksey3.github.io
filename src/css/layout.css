@@ -32,7 +32,6 @@
 }
 
 #picture {
-/*	grid-column: 1/6;*/
 	display: flex;
 	justify-content: center;
 	align-self: center;
