@@ -26,7 +26,6 @@
 #about-me {
 	grid-column: 1/6;
 	display: flex;
-	/*flex-wrap: wrap;*/
 	justify-content: center;
 	align-items: center;
 }
@@ -229,35 +228,7 @@
     text-align: center;
 }
 
-.carousel {
-    display: flex;
-    justify-content: center;
-}
-
-figure a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image-carousel {
-    display: flex;
-    grid-column: 1/-1;
-    justify-content: center;
-    width: 10rem;
-    height: 12rem;
-    overflow-x: hidden;
-    position: relative;
-}
-
-.inner {
-    display: flex;
-    position: absolute;
-    left: 0;
-    transition: left 0.25s ease-out;
-}
-
-.next::after, .prev::after {
+/*.next::after, .prev::after {
     content: '>';
     position: absolute;
     top: 50%;
@@ -280,7 +251,7 @@ figure a {
     content: '<';
     left: 0;
 }
-
+*/
 .image {
     height: 10rem;
     width: 10rem;
@@ -291,8 +262,6 @@ figure a {
     flex-direction: column;
     width: 250px;
     height: auto;
-    margin-top: 10px;
-    margin-left: 10px;
     text-align: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
