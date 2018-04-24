@@ -23,6 +23,8 @@ function expandMenu(event) {
     } else {
       element.style.display = "block";
     };
+    element.style.transitionDuration = '1s'
+
   };
 }
 

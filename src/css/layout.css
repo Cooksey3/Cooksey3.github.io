@@ -231,30 +231,6 @@
     text-align: center;
 }
 
-/*.next::after, .prev::after {
-    content: '>';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    font-size: 20px;
-    width: 1em;
-    height: 3em;
-    transform: translateY(-50%);
-    line-height: 3em;
-    box-sizing: border-box;
-    padding: 0 0.2em;
-    transition: opacity 0.1s linear;
-}
-
-.next:hover::after, .prev:hover::after {
-    opacity: 1;
-}
-
-.prev::after {
-    content: '<';
-    left: 0;
-}
-*/
 .image {
     height: 10rem;
     width: 10rem;
