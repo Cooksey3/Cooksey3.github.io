@@ -133,21 +133,22 @@
 .container-projects {
 	display: grid;
 	height: 100vh;
-	grid-template-columns: 3fr;
+	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: 70px auto 50px;
 	grid-gap: var(--grid-gap);
 }
 
 .cards {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	/*flex-basis: 100px;*/
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .project-image {
 	max-height: 300px;
+    height: 10rem;
 }
 
 .container > header nav ul {
@@ -231,30 +232,6 @@
     text-align: center;
 }
 
-/*.next::after, .prev::after {
-    content: '>';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    font-size: 20px;
-    width: 1em;
-    height: 3em;
-    transform: translateY(-50%);
-    line-height: 3em;
-    box-sizing: border-box;
-    padding: 0 0.2em;
-    transition: opacity 0.1s linear;
-}
-
-.next:hover::after, .prev:hover::after {
-    opacity: 1;
-}
-
-.prev::after {
-    content: '<';
-    left: 0;
-}
-*/
 .image {
     height: 10rem;
     width: 10rem;
@@ -266,6 +243,9 @@
     text-align: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    width: 15rem;
+    flex-basis: 15rem;
+    max-height: 14rem;
 }
 
 .description {

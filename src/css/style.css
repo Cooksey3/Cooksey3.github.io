@@ -26,8 +26,6 @@
     border-color: black;
 }
 
-
-
 .bio {
     font-style: italic;
 }
@@ -142,27 +140,11 @@
     color: lightgray;
 }
 
-.next::after, .prev::after {
-    background-color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-.next:hover::after, .prev:hover::after {
-    opacity: 1;
-}
-
-.prev::after {
-    content: '<';
-    left: 0;
-}
-
 .card {
     color: lightgray;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: black;
 }
 
 .description {
@@ -197,9 +179,4 @@
     background-color: black;
     color: lightgray;
     cursor: pointer;
-}
-
-.project-image {
-    height: 5rem;
-    /*width: 5rem;*/
 }
