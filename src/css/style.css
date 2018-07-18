@@ -15,11 +15,6 @@
     font-size: 50px;
 }
 
-.name {
-    font-size: 40px;
-    color: lightgray;
-}
-
 .footer {
     color: lightgray;
     background-color: black;
@@ -39,6 +34,11 @@
     list-style-type: none;
     text-indent: 5px;
 }
+
+.back-end-skills, .front-end-skills, .other-skills {
+    display: none;
+}
+
 .container > header nav ul {
     display: none;
     left: -47px;
