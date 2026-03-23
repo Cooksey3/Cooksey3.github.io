@@ -1,77 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris's Portfolio</title>
-
-    <link rel="stylesheet" href="./src/css/layout.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-
-    <!-- Font awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</head>
-<body>
-    <div class="container-home">
-        <header id="header" class="header">
-            <h1 class="name">Chris Cooksey</h1>
-            <section class="dropdown">
-                <button class="menu">Menu</button>
-                <nav id="myDropdown" class="dropdown-content">
-                    <a id="link2" href="./projects.html">Projects</a>
-                </nav>
-            </section>
-        </header>
-        <section id="about-me">
-            <img id="picture" src="resources/adirondacks.jpg">
-        </section>
-        <section id="skills">
-            <ul class="back-end">Back end:
-                <div class="back-end-skills">
-                    <li class="items" id="listitem1">Java</li>
-                    <li class="items" id="listitem2">OOP</li>
-                    <li class="items" id="listitem3">Spring</li>
-                    <li class="items" id="listitem4">SQL</li>
-                    <li class="items" id="listitem5">TDD</li>
-                </div>
-            </ul>
-        	<ul class="front-end">Front end:
-                <div class="front-end-skills">
-                    <li class="items" id="listitem6">HTML5</li>
-                    <li class="items" id="listitem7">CSS3</li>
-                    <li class="items" id="listitem8">TDD</li>
-                    <li class="items" id="listitem9">Flexbox</li>
-                    <li class="items" id="listitem10">jQuery</li>
-                </div>
-        	</ul>
-            <ul class="other">Other:
-                <div class="other-skills">
-                    <li class="items" id="listitem11">Git</li>
-                    <li class="items" id="listitem12">Leadership</li>
-                    <li class="items" id="listitem13">Presentation</li>
-                    <li class="items" id="listitem14">Management</li>
-                    <li class="items" id="listitem15">Communication</li>
-                </div>
-            </ul>
-        </section>
-        <footer class="footer">
-            <button class="trigger">About me</button>
-            <section class="about-me">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <p class="bio">Chris is an aspiring developer who enjoys programming things that matter. He has been married to his wife, Amy, for 2 years. He has a BA in psychology from The Ohio State University, and is working towards a Software Programming Certificate from the Java-based, full-stack sofware development program, We Can Code IT. His interests outside of work include playing soccer and basketball, cooking and grilling, reading, and playing board games.</p>
-                </div>
-            </section>
-            <div class="contact-info">
-                <nav id="linkedIn"><a href="https://www.linkedin.com/in/chris-cooksey"><i class="fab fa-linkedin" style="color: #0073b1"></i></a></nav>
-                <nav id="github"><a href="https://github.com/Cooksey3"><i class="fab fa-github" style="color: white"></i></a></nav>
-                <nav id="email"><a href="mailto:chris@cookseys.org"><i class="far fa-envelope" style="color: red"></i></a></nav>
-            </div>
-        </footer>
-    </div>
-    <script src="./src/js/projects.js"></script>
-    <script src="./src/js/modal.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
