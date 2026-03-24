@@ -33,7 +33,7 @@ const projects = [
 ]
 
 const Projects = () => (
-  <Layout title="Projects" navLinks={[{ to: '/', label: 'Home' }]}>
+  <Layout title="Chris Cooksey" navLinks={[{ to: '/', label: 'Home' }]}>
     <PageContainer>
       <section className="flex flex-wrap w-full items-center gap-8">
         {projects.map((project) => (
