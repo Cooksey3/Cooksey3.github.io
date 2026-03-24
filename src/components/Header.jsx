@@ -9,16 +9,25 @@ const Header = ({ title, navLinks }) => {
           {title}
         </h1>
         <section className="">
-          <nav className="shadow-lg rounded-lg overflow-hidden">
-            {navLinks.map(({ to, label }) => (
+          <nav className="flex gap-4 shadow-lg rounded-lg overflow-hidden">
               <Link
-                key={to}
                 className="block text-gray-300 font-bold no-underline hover:text-[#F0F8FF] transition-colors duration-200"
-                to={to}
+                to={"/"}
               >
-                {label}
+                Home
               </Link>
-            ))}
+              <Link
+                className="block text-gray-300 font-bold no-underline hover:text-[#F0F8FF] transition-colors duration-200"
+                to={"/projects"}
+              >
+                Projects
+              </Link>
+              <Link
+                className="block text-gray-300 font-bold no-underline hover:text-[#F0F8FF] transition-colors duration-200"
+                to={"/resumé"}
+              >
+                Resume
+              </Link>
           </nav>
         </section>
       </div>
